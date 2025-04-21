@@ -1,16 +1,16 @@
 # MemoryPool
 
 
-简介：基于池化技术的思想，向操作系统申请以页为单位的内存，存储管理起来，后面有进程/线程需要内存，直接从内存池中分配。
+简介：基于池化技术的思想，实现了三层结构的内存池，在多线程同时竞争申请内存的情况下，其效率比malloc高15~20%
 
 
 知识储备：C/C++、链表、哈希桶、基数树、单例模式、多线程、互斥锁、操作系统内存管理。
 
 
-开发环境：Windows、VS 2019
+开发环境：VS 2019、Windows10
 
 
-功能：设计结构有三层，分别是ThreadCache，CentralCache，PageCache。
+功能：内存池的结构有三层，分别是ThreadCache，CentralCache，PageCache。
 ![image](https://github.com/user-attachments/assets/d95326d3-7696-4413-850d-a7fee9d473b2)
 
 
